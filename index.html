@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>White Line</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- logo and menu -->
+
+        <header id="header">
+            <div class="wrapper">
+                <a href="/">
+                    <!-- <img src="./img/logo.png" alt="logo"> -->
+                    <h1>White Line</h1>
+                </a>
+                
+                <button id="submit" onclick="showMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- menu and links -->
+                <ul class="menu-left">
+                    <li><a href="#">How we Function</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <ul class="menu-right">
+                    <li class="menu-cta"><a href="#" onclick="showMenu()">Get Started</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- menu end -->
+
+        <!-- intro page start -->
+
+        <section id="intro">
+            <div class="top-right-gradient"></div>
+            <div class="wrapper">
+
+                <div class="intro-left">
+                    <h1>Creative Insights to <br> Grow Your Business</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, accusamus!</p>
+                    <a href="#" class="intro-cta">Try it for Free</a>
+                </div>
+
+                <div class="intro-right">
+                    <img src="./img/1.svg" alt="image">
+                </div>
+               
+            </div>
+            <div class="bottom-left-gradient"></div>
+        </section>
+        
+        <!-- intro page end -->
+
+        <!-- about page start -->
+
+        <section id="about">
+            <div class="wrapper">
+                <div class="about-left">
+                    <img src="./img/2.svg" alt="">
+                </div>
+                <div class="about-right">
+                    <h1>How we help YOU grow your Business</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sapiente!</p>
+                    <a href="#" class="cta">Learn More</a>
+                </div>
+               
+            </div>
+            <div class="top-right-gradient"></div>
+        </section>
+
+        <!-- about page end -->
+
+        <!-- banner start -->
+
+        <div class="page-banner">
+            <h1>Analytics Made Easy</h1>
+            <h3>Experience the next Generation Analytics</h3>
+            <a href="#">Get Started</a>
+        </div>
+
+        <!-- banner end -->
+
+        <!-- footer start -->
+
+        <!-- footer left start -->
+        <footer>
+            <div class="wrapper">
+
+                <div class="footer-left">
+                    <a href="#">
+                        <h1>White Line</h1>
+                       
+                    </a>
+                    <p class="footer-links">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Contact</a>
+                    </p>
+                    <p class="footer-company-name">White Line</p>
+                </div>
+
+                <!-- footer left end -->
+
+                <!-- footer center start -->
+
+                <div class="footer-center">
+                    <div>
+                        <i class="fas fa-map-marker"></i>
+                        <p>
+                            <span>965 Central Rd.</span>
+                            Lakewood, NJ 08701
+                        </p>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <p><span>+1 555 12342342</span></p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="#">white@dev.com</a></p>
+                    </div>
+
+                </div>
+
+                <!-- footer centre end -->
+
+                <!-- footer right start -->
+
+                <div class="footer-right">
+                    <p class="footer-connect">
+                        <span>Connect with Us</span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eligendi!
+                    </p>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- footer end -->
+
+        <!-- javascript start-->
+
+        <script>
+            function showMenu(event){
+                console.log('show menu called')
+                
+                let header=document.getElementById('header');
+                if(header.classList.contains('active')){
+                    header.className='';
+                }else{
+                    header.className='active'
+                }
+                console.log(header.className);
+            }
+        </script>
+
+        <!-- javascript end -->
+
+    </div>
+</body>
+
+</html>
