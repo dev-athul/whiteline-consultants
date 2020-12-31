@@ -307,6 +307,7 @@ footer .footer-left, footer .footer-center, footer .footer-right{
 
 footer .footer-left{
     width: 40%;
+    padding:10px;
 }
 
 footer .footer-left img{
@@ -644,4 +645,8 @@ footer .footer-connect{
 }
 
 
+}
+
+footer .footer-left h1{
+    color: #ec4357 !important;
 }
